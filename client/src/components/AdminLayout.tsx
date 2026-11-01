@@ -81,7 +81,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
           </button>
         </nav>
 
-        {/* User Info */}
+        {/* User Information*/}
         {sidebarOpen && (
           <div className="p-4 border-t border-border bg-accent/5 rounded-lg m-4">
             <p className="text-xs text-muted-foreground mb-1">Logged in as</p>
