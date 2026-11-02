@@ -18,7 +18,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
     navigate("/");
   };
 
-  // Redirect if not admin
+  // If not admin redirect
   if (user?.role !== "admin") {
     return null;
   }
