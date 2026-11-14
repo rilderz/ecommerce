@@ -18,7 +18,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
     navigate("/");
   };
 
-  // If not admin redirect
+  // admin control
   if (user?.role !== "admin") {
     return null;
   }
@@ -56,7 +56,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
           </button>
         </div>
 
-        {/* Navigation */}
+        {/* Navigation through admin dashboard */}
         <nav className="flex-1 p-4 space-y-2">
           <button
             onClick={() => navigate("/admin")}
